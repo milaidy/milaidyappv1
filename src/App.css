@@ -1,0 +1,213 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color and font for the entire page */
+body {
+  background-color: #008080; /* Teal */
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+
+/* Add a container to center the content */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.xp-button {
+  background-color: #008080; /* Teal */
+  color: #000; /* Black */
+  border: 2px solid #000;
+  padding: 1rem 2rem; /* Increase padding */
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; /* Take up the full width */
+  font-size: 1.2rem; /* Increase font size */
+  text-transform: uppercase;
+}
+
+/* Set the container for the page content */
+.container {
+  max-width: 600px;
+  background-color: #c0c0c0; /* Silver */
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+.header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header ul li {
+  margin: 0;
+}
+
+/* Style the main content */
+.main-content {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+/* Style the buttons */
+.button {
+  background-color: #008080; /* Teal */
+  color: #000; /* Black */
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+
+.button:hover {
+  background-color: #333;
+}
+
+/* Style the form input fields */
+.input-field {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Style the logo images */
+.logo-opensea,
+.logo-twitter {
+  width: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.logo-opensea:hover,
+.logo-twitter:hover {
+  transform: scale(1.1);
+}
+
+/* Style the text background container */
+.text-background {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin: 0;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #c0c0c0; /* Silver */
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center the content */
+}
+
+.input-field {
+  border: 2px solid #000;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+
+.submit-button,
+.mint-button {
+  background-color: #008080; /* Teal */
+  color: #000; /* Black */
+  border: 2px solid #000;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; /* Take up the full width */
+}
+
+.submit-button:hover,
+.mint-button:hover {
+  background-color: #000; /* Black */
+  color: #fff; /* White */
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .logo-opensea,
+  .logo-twitter {
+    width: 40px;
+    margin: 0 8px;
+  }
+}
